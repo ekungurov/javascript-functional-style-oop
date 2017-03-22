@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Homework</title>
+    <script src="classes.js"></script>
+</head>
+<body>
+    <script>
+        let fiat = automobile();
+
+        console.log("Fiat object: ");
+        console.log(fiat);
+
+        console.log("Fiat initial speed: " + fiat.getSpeed());
+        fiat.setSpeed(80);
+        console.log("Fiat new speed: " + fiat.getSpeed());
+
+        /***/
+
+        cabriolet.setSpeedLimitWithoutRoof(125);
+        let maserati = cabriolet();
+
+        console.log("Maserati object: ");
+        console.log(maserati);
+
+        console.log("Maserati initial speed: " + maserati.getSpeed());
+
+        maserati.setSpeed(120);
+        console.log("Maserati new speed: " + maserati.getSpeed());
+
+        maserati.collapseRoof();
+
+        maserati.setSpeed(150);
+        console.log("Maserati new speed: " + maserati.getSpeed());
+
+        maserati.setSpeed(200);
+        console.log("Maserati new speed: " + maserati.getSpeed());
+    </script>
+</body>
+</html>
